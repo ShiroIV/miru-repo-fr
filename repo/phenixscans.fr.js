@@ -4,7 +4,7 @@
 // @author       Grand_K
 // @lang         fr
 // @license      MIT
-// @icon         https://phenixscans.fr/wp-content/uploads/2023/05/cropped-Calque-1-32x32.png
+// @icon         https://phenixscans.fr/wp-content/uploads/2023/05/Calque-1.png
 // @package      phenixscans.fr
 // @type         manga
 // @webSite      https://phenixscans.fr/
@@ -105,7 +105,7 @@ export default class extends Extension {
             episodes: [
                 {
                     title: "Chapitres",
-                    urls: episodes,
+                    url: episodes,
                 },
             ],
         };
