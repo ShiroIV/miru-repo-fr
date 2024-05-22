@@ -3,6 +3,13 @@
 
 Miru extensions repository | [Miru App Download](https://github.com/miru-project/miru-app) |
 
+## New List
+|  Name   | Package | Version | Author | Language | Type | Source |
+|  ----   | ---- | --- | ---  | ---  | --- | --- |
+| PhenixScans | phenixscans.fr | v0.0.1 | Grand_K | fr | manga | [Source Code](https://github.com/ShiroIV/miru-repo-fr/blob/main/repo/phenixscans.fr.js) |
+
+
+
 ## List
 |  Name   | Package | Version | Author | Language | Type | Source |
 |  ----   | ---- | --- | ---  | ---  | --- | --- |
