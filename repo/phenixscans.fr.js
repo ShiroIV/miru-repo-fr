@@ -4,7 +4,7 @@
 // @author       Grand_K
 // @lang         fr
 // @license      MIT
-// @icon         https://phenixscans.fr/wp-content/uploads/2023/05/Calque-1.png
+// @icon         https://pbs.twimg.com/profile_images/1663318721878794247/bjV3Wrx4_400x400.jpg
 // @package      phenixscans.fr
 // @type         manga
 // @webSite      https://phenixscans.fr/
@@ -85,7 +85,7 @@ export default class extends Extension {
         const epiList = await this.querySelectorAll(res, "#chapterlist > ul > li");
         const episodes = await Promise.all(epiList.map(async (element) => {
             const html = await element.content;
-            const name = (await this.querySelector(html, "span.chapternum").text).trim().replace(/[\n\t]/g, '');;
+            const name = (await this.querySelector(html, "span.chapternum").text).trim().replace(/[\n\t]/g, '');
             const url = await this.getAttributeText(html, "a", "href");
             return {
                 name,
@@ -120,7 +120,7 @@ export default class extends Extension {
 
         const images = await Promise.all((await this.querySelectorAll(res, "div#readerarea > img")).map(async (element) => {
             const html = await element.content;
-            return this.getAttributeText(html, "img", "src");
+            return this.getAttributeText(html, "img", "data-src");
         }));
 
         return {
